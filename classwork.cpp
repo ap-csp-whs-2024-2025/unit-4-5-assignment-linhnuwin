@@ -8,13 +8,19 @@ void displayList(std::vector<T> const &v);
 int main()
 {
     // You can follow along with any code in class here
-    int x = 5
-    double y = 3.14
-    std::string name = "Mr. Vu"
+    int x = 5;
+    double y = 3.14;
+    std::string name = "Mr. Vu";
+    std::cout << name << std::endl;
     std::vector<int> jennys = {8, 6, 7, 5, 3, 0, 9};
+    displayList(jennys);
+    jennys.pop_back();
     std::vector<double> foo = {3.14, 2.5};
-    std::vector<std::string> bar = {"Hello", "Darkness", "My", "Old", "Friend"};
-
+    displayList(foo);
+    std::vector<std::string> bar = {"Hello", "Darkness", "My", "Old", "Friend", };
+    displayList(bar);
+    bar.push_back("Linh");
+    
     
     return 0;
 }

@@ -7,8 +7,25 @@ void displayList(std::vector<T> const &v);
 
 int main()
 {
-    // You can follow along with any code in class here
+    // Task #1, #3, & #4
+    std::vector<int> numbers = {1,2,3,4,5};
+    std::cout << "Numbers: ";
+    displayList(numbers);
+    std::vector<double> decimals = {3.14, 6.28, 9.42, 12.57, 15.71};
+    std::cout << "Decimals: ";
+    decimals.pop_back();
+    displayList(decimals);
+    std::vector<std::string> rickroll = {"Never", "Gonna", "Give", "You", "Up"};
+    std::cout << "Strings: ";
+    rickroll.push_back("Linh");
+    displayList(rickroll);
 
+// Task #2
+    std::cout << numbers[0] << ", ";
+    std::cout << numbers[2] << ", ";
+    std::cout << numbers[4] << " " << std::endl;
+
+    // Task #4
     
     return 0;
 }
